@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  validates :category, :content, presence: true
+
   enum category: {
     world: 1,
     business: 2,

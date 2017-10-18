@@ -6,6 +6,11 @@ RSpec.describe Post, type: :model do
     it { should respond_to(:content) }
   end
 
+  describe 'validations' do
+    it { should validate_presence_of(:category) }
+    it { should validate_presence_of(:content) }
+  end
+
   describe 'enums' do
     it 'categories' do
       expect(Post.categories).to eq({
