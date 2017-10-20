@@ -8,8 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -31,6 +30,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.8'
   gem 'faker', '~> 1.8', '>= 1.8.4'
   gem 'rspec-rails', '~> 3.6'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -42,6 +42,10 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 3.1'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
