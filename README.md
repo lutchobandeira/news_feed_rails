@@ -1,24 +1,13 @@
-# README
+This project is the result of this blog post: http://lutchobandeira.com/how-to-build-a-news-feed-in-reactjs-part-2/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+$ rails routes
+```
 
-Things you may want to cover:
+```
+Prefix Verb URI Pattern      Controller#Action
+ posts GET  /posts(.:format) posts#index
+       POST /posts(.:format) posts#create
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployed at heroku: http://news-feed-rails.herokuapp.com
